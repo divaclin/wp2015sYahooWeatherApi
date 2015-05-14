@@ -23,7 +23,7 @@
              setSubtitle(noCity);
              return false;
            }
-           console.log(weatherInfo);
+           $('body').append('<p>'+weatherInfo.astronomy.sunrise+'</p>');
 		   console.log(cityMatch);
 		   console.log(nocity);
          }
