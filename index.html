@@ -11,7 +11,7 @@
          method: 'GET',
          data: {
            q: 'select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + city + '")',
-           format: 'json
+           format: 'json'
          },
          success: function (data) {
 			 var weatherInfo = data.query.results.channel;
